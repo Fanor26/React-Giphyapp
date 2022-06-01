@@ -1,6 +1,7 @@
 import React from 'react'
 import useForm from '../hooks/useForm'
-export const AddCategory = () => {
+import PropTypes from 'prop-types'
+export const AddCategory = ({setCategories}) => {
     const [form, handlerChangeform, handlerResetform] = useForm({search:''});
     const { search } = form;
     const handlerSubmit = (event) =>{
@@ -22,3 +23,6 @@ export const AddCategory = () => {
         </form>
     )
 }
+AddCategory.propTypes = {
+    setCategories : PropTypes.func.isRequired
+} 

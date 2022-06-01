@@ -4,7 +4,7 @@ export const GifMainApp = () => {
   return (
     <>
       <h2>Memes</h2>
-      <AddCategory />
+      <AddCategory setCategories={() => {}} />
       
     </>
   );
