@@ -7,7 +7,8 @@ export const AddCategory = ({setCategories}) => {
     const handlerSubmit = (event) =>{
         event.preventDefault();
         if(search.trim().length > 2){
-            alert(search);
+            setCategories(categories => [search, ...categories]);
+            handlerResetform();
         }
 
     }
