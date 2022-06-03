@@ -9,32 +9,55 @@ input {
   font-size: 1.2rem;
   width: 100%;
 }
-.card-grid {
+.cardContainer .card-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 00.625rem;
-  
+  width: 100%;
+  margin-top: 0.625rem;
+  background-color: bisque;
+  border: 0.094em solid #641010;
   position: relative;
 }
+
 .card-grid .close {
+  display: inline-block;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 5px;
+  top: 5px;
   padding: 10px;
+  margin-bottom: 0.625rem;
+  border: 0.094em solid #641010;
+  border-radius: 0.625em;
   background-color: red;
-  color: aliceblue;
-  border-radius: 10px;
+  box-shadow: 0 0.375em 0.313em -0.313em rgba(216, 69, 69, 0.8),
+    inset 0 0.063em rgba(255, 255, 255, 0.4),
+    inset 0 -0.188em rgba(231, 64, 64, 0.15);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 0.063em rgb(141, 43, 43);
   cursor: pointer;
+  font: bold 1rem sans-serif;
 }
+.close:hover {
+  background-color: #ce414c;
+  box-shadow: 0 0.125em rgba(255, 255, 255, 0.4),
+    inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em #3b0a0d;
+}
+.close:active {
+  box-shadow: inset 0 0 1.094em #5e1717, inset 0 0.063em #570b0b,
+    inset 0 -0.188em #4e1010, 0 0.063em rgba(255, 255, 255, 0.4);
+}
+
 .card {
   border: 1px solid grey;
-  padding: 1rem;
+  padding: 10px;
   margin-left: 0.625rem;
-  margin-right: 0.625rem;
-  margin-top: 10px;
+  margin-bottom: 0.625rem;
+  margin-top: 2rem;
   border-radius: 6px;
- 
+
   img {
     height: 13.5rem;
     max-width: 13.5rem;
@@ -44,9 +67,5 @@ input {
     text-align: center;
     font-size: 10px;
     font-style: Arial;
-  
   }
-
- 
 }
-

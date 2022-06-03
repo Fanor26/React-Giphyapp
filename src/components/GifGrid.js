@@ -6,11 +6,15 @@ export const GifGrid = ({ category }) => {
   const { data, loading } = useFetch(category);
   return (
     <ol>
+      <div className='cardContainer'>
       <div className="card-grid">
+      
             {data.map(img => (
             <GifGridItem key={img.id} { ...img}/>
                 ))}
+                
             <div className="close">Close</div>
+            </div>
       </div>
     </ol>
   );
