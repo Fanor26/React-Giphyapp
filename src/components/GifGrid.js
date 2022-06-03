@@ -7,8 +7,8 @@ export const GifGrid = ({ category }) => {
   return (
     <ol>
       <div className="card-grid">
-            {data.map((img) => (
-            <GifGridItem key={img.id} {...img}/>
+            {data.map(img => (
+            <GifGridItem key={img.id} { ...img}/>
                 ))}
             <div className="close">Close</div>
       </div>
