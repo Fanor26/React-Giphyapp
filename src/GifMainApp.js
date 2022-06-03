@@ -8,7 +8,7 @@ export const GifMainApp = () => {
       <h2>Memes</h2>
       <AddCategory setCategories={setCategories} />
       <ol>
-        {categories.map(category => (
+        {categories.map((category) => (
          
           <GifGrid category={category} />
   ))}

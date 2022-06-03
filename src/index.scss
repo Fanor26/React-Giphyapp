@@ -13,17 +13,32 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
+  margin-top: 0.625rem;
+  position: relative;
+}
+.card-grid .close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .card {
   border: 1px solid grey;
   padding: 1rem;
   margin-left: 0.625rem;
+  margin-right: 0.625rem;
   margin-top: 10px;
   border-radius: 6px;
+  max-height: 12.5rem;
 }
-.card img {
-  max-height: 11.5rem;
-}
+
 .card p {
   padding: 5px;
+  text-align: center;
 }
